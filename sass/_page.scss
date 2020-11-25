@@ -1,0 +1,15 @@
+.page {
+    display: flex;
+    min-height: 200vh;
+    flex-direction: column;
+    font-family: $main-font;
+    overflow-x: hidden;
+}
+
+.page__content {
+    flex: 1 0 auto;
+}
+
+.page__footer {
+    flex-shrink: 0;
+}
