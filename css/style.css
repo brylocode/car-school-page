@@ -16,13 +16,19 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 200vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: 200vh;
+  padding-top: 9rem;
   font-family: "Nunito Sans", sans-serif;
-  overflow-x: hidden;
+}
+
+@media (min-width: 1200px) {
+  .page {
+    padding-top: 0;
+  }
 }
 
 .page__content {
@@ -43,8 +49,8 @@ html {
   right: 0;
   padding: 1rem;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 12px 10px #fff, 0 5px 12px 0 #fff;
-          box-shadow: 0 0 12px 10px #fff, 0 5px 12px 0 #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   z-index: 2;
 }
 
@@ -115,7 +121,7 @@ html {
   color: #000;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .nav {
     position: static;
     padding: 3rem;
@@ -128,6 +134,7 @@ html {
   }
   .logo__img {
     height: 6rem;
+    padding-right: 2rem;
   }
   .menu__btn {
     display: none;
@@ -146,6 +153,9 @@ html {
             justify-content: flex-end;
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .menu__element:last-child .menu__link {
+    padding-right: 0;
   }
   .menu__link {
     position: relative;

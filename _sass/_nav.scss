@@ -8,8 +8,8 @@ $link-font: #000;
     right: 0;
     padding: 1rem;
     background-color: #fff;
-    box-shadow: 0 0 12px 10px #fff,
-        0 5px 12px 0 #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+        rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
     z-index: 2;
 }
 
@@ -68,7 +68,7 @@ $link-font: #000;
 }
 
 
-@media (min-width: 768px) {
+@media (min-width: $breakpoint-desktop) {
     .nav {
         position: static;
         padding: 3rem;
@@ -82,6 +82,7 @@ $link-font: #000;
 
     .logo__img {
         height: 6rem;
+        padding-right: 2rem;
     }
 
     .menu__btn {
@@ -96,6 +97,10 @@ $link-font: #000;
         box-shadow: none;
     }
 
+    .menu__element:last-child .menu__link {
+        padding-right: 0;
+    }
+
     .menu__link {
         position: relative;
         padding: 1rem 2.5rem;
@@ -106,6 +111,7 @@ $link-font: #000;
         &:hover {
             text-decoration: underline;
         }
+
 
 
 

@@ -1,9 +1,14 @@
 .page {
     display: flex;
-    min-height: 200vh;
     flex-direction: column;
+    min-height: 200vh;
+    padding-top: 9rem;
     font-family: $main-font;
-    overflow-x: hidden;
+    // overflow-x: hidden;
+
+    @media (min-width: $breakpoint-desktop) {
+        padding-top: 0;
+    }
 }
 
 .page__content {
